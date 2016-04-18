@@ -1,0 +1,27 @@
+<div>
+	<!-- usered to show the latest reaction with the user-->
+	<div ng-controller="latestRequestCtrl"  style="background-color:black; color:white; padding:20px;"  ng-class="container">
+		<p>require time : {{ time }}</p>
+		<p>user name :{{}}</p>		
+		<p>request bankd:{{}}</p>
+		<p>current status: {{}}</p>
+		<p>last change time:{{}}</p>
+		<select>
+			<option>on processing</option>
+			<option>need more document</option>
+			<option>finished</option>
+		</select>
+	</div>
+
+	<br/>
+	<!--used to send message to user-->
+	<div ng-controller="communicateCtrl" style="background-color:black; color:white; padding:20px;">
+		<textarea rows="3" cols="20"> </textarea>
+		<!--file upload  the -->
+		<button ng-click="">send</button>
+	</div>
+	<!--used to show the history communication list-->
+	<div ng-controller="historyCtrl" style="background-color:black; color:white; padding:20px;">
+		
+	</div>
+</div>

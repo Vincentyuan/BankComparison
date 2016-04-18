@@ -1,0 +1,61 @@
+<!--<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>customer space</title>
+    <link type="text/css" rel="stylesheet" href="stylesheets/spaceStyle.css" />
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller/controllers.js"></script>
+    <script src="js/service/commandsService.js"></script>
+</head>
+<body >-->
+<div  ng-controller="spaceCtrl">
+    <!-- the left function list-->
+    <div class="left">
+        <div>
+            <ol>
+                <li   type="button"  ng-click="seeMyCommands()" class="functionButton">my commands</li>
+                <li  type="button"  ng-click="goToApply()" class="functionButton">apply a bank account</li>
+            </ol>
+        </div>
+    </div>
+    <!-- the right page-->
+    <div >
+
+        <div class="spaceDetail">
+            <h1>hello {{loginUser.firstName}} {{loginUser.familyName}}!</h1>
+            <div>
+                <span>command number:</span>
+                <span>{{latestCommand.number}}{{commandN}}</span>
+            </div>
+            <div>
+                <span>applying date:</span>
+                <span>{{latestCommand.date}}</span>
+            </div>
+            <div>
+                <span>progress:</span>
+                <span>{{latestCommand.progress}}</span>
+            </div>
+            <div>
+                <span>bank:</span>
+                <span>{{latestCommand.bank[0].location[0].rue}},{{latestCommand.bank[0].location[0].zip}},{{latestCommand.bank[0].location[0].city}}</span>
+            </div>
+            <div>
+                <span>manager:</span>
+                <span>{{latestCommand.manager}}</span>
+            </div>
+            <!-- button to deal with this command-->
+            <div>
+                <button>cancel this command</button>
+                <button>contact manager</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--
+</body>
+</html>
+-->

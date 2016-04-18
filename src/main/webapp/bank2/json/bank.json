@@ -1,0 +1,56 @@
+{
+  "bankList":[
+    {
+      "bankName":"BNP",
+      "location":[{
+        "zip":"94400",
+        "rue":"61,rue charles infroit",
+        "city":"Paris"
+      }
+      ],
+      "manager":"Adela"
+    },
+
+    {
+      "bankName":"BNP",
+      "location":[{
+        "zip":"94400",
+        "rue":"61,rue charles infroit",
+        "city":"Paris"
+      }
+      ],
+      "manager":"Adela"
+    },
+    {
+      "bankName":"BNP",
+      "location":[{
+        "zip":"94400",
+        "rue":"61,rue charles infroit",
+        "city":"Paris"
+      }
+      ],
+      "manager":"Adela"
+    },
+    {
+      "bankName":"BNP",
+      "location":[{
+        "zip":"94400",
+        "rue":"61,rue charles infroit",
+        "city":"Paris"
+      }
+      ],
+      "manager":"Adela"
+    },
+    {
+      "bankName":"BNP",
+      "location":[{
+        "zip":"94400",
+        "rue":"61,rue charles infroit",
+        "city":"Paris"
+      }
+      ],
+      "manager":"Adela"
+    }
+
+  ]
+}

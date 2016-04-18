@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <script src="./js/angular.min.js"></script>
+</head>
+<body>
+
+ 
+<div ng-app="myApp" ng-controller="customersCtrl"> 
+
+	 interest rate ： <input type="number" min=0 data-ng-model="rate" data-ng-init=" rate= 0.1">
+        <br>
+        amount  ： <input type="number" min=0 data-ng-model="amount" data-ng-init="amount = 1000">
+        <br>
+        <button ng-click="result = rate *  amount" ng-init="count=0">
+ 			 compute
+		</button>
+        interest ： {{ result }}
+       
+<ul>
+  <li ng-repeat="x in names">
+    {{ x.cityId + ', ' + x.cityName +','+x.cityLocation}}
+  </li>
+</ul>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+  $http.get("./data.json")
+  .success(function (response) {$scope.names = response;});
+});
+</script>
+
+
+</body>
+</html>

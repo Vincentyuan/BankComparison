@@ -1,0 +1,108 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>open an Account</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/applyAccount.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controller/controllers.js"></script>
+    <script src="js/controller/applyCtrl.js"></script>
+    <script src="js/service/banksService.js"></script>
+
+</head>
+<body >
+-->
+<div ng-app="mainUserApp"  ng-controller="applyCtrl"  ng-class="container">
+    <!--choose a bank-->
+    <div>
+        <span>{{mybanks.city_name}}</span>
+        <label>choose a bank</label>
+        <select id="bankSelector">
+            <option>choose a bank</option>
+            <option ng-repeat="b in banks" bankname="dsfdd">{{b.bankName}}</option>
+        </select>
+    </div>
+
+
+    <br/>
+
+    <!--find a specific bank-->
+    <div class="widget-tabs">
+        <h2>choose your bank address</h2>
+        <div class="tabs">
+
+            <!--.filter-->
+            <div class="tab-nav">
+                <ul class="tab-filter">
+                    <li><a href="#1">find by list</a></li>
+                    <li><a href="#2">find by map</a></li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="1">
+                <div class="tab clearfix">
+                    <label>your zip</label>
+                    <form>
+                        <p><input type="text" name="zip" ng-model="zip" ></p>
+                        <button type = "button" ng-click="findABank()" id="checkZipBt">ok</button>
+                        <div >
+                            <select id="locationSelector">
+                                <option>choose a bank</option>
+                                <option ng-repeat="b in returnBanks">{{b.location[0].rue}}</option>
+                            </select>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="tab-content" id="2">
+            </div>
+        </div>
+    </div>
+    <!--.widget tabs-->
+
+    <div>
+        <label>admission letter</label>
+        <form>
+            <input type="file" name="admission letter" id="admission" accept="image/gif, image/jpeg" />
+        </form>
+    </div>
+
+    <div>
+        <label>register certification</label>
+        <form>
+            <input type="file" name="register certification" id="register" accept="image/gif, image/jpeg" />
+        </form>
+    </div>
+
+    <div>
+        <label>house renting certification</label>
+        <form>
+            <input type="file" name="house renting certification" id="house" accept="image/gif, image/jpeg" />
+        </form>
+    </div>
+
+<!-- recommend code-->
+    <div>
+        <label>recommend code</label>
+        <form>
+            <p><input type="text" name="code" ng-model="recoCode"></p>
+        </form>
+    </div>
+    <button  type="button"  ng-click="submit()" >ok</button>
+    <button type="button" ng-click="check()">back</button>
+
+</div>
+
+<!--
+</body>
+
+</html>
+-->

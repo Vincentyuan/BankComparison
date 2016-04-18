@@ -1,0 +1,16 @@
+<div ng-controller="listController" >
+<!--	 <a ng-click="clickEvent($event)" class="exampleClass" id="exampleID" data="exampleData" > Click Me</a> -->
+
+	<table ng-controller="listController"  ng-class="container">
+	  <tr ng-repeat="x in requestList">
+	  <div style="background-color:black; color:white; padding:20px;">
+	    <td ng-click="details($event)" userId={{x.requestId}}>
+	    	{{x.username}}
+	    	<p>{{x.time}}</p>
+	    	<p>{{x.status}}</p>
+
+	    </td>
+	  </div>
+	  </tr>
+	</table>
+</div>

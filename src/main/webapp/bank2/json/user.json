@@ -1,0 +1,32 @@
+{
+  "userList":[
+    {
+      "e_mail": "137150808@qq.com",
+      "firstName": "xinyu",
+      "familyName": "liu",
+      "pass": "123",
+      "type":"student"
+    },
+    {
+      "e_mail": "137150808@qq.com",
+      "firstName": "xinyu",
+      "familyName": "liu",
+      "pass": "123",
+      "type":"student"
+    },
+    {
+      "e_mail": "137150808@qq.com",
+      "firstName": "xinyu",
+      "familyName": "liu",
+      "pass": "123",
+      "type":"student"
+    },
+    {
+      "e_mail": "137150808@qq.com",
+      "firstName": "xinyu",
+      "familyName": "liu",
+      "pass": "123",
+      "type":"student"
+    }
+  ]
+}
